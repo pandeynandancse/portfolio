@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock%}
+
+
+
+{% block body %}        
+        
+
+        
+
+
+            
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project : <strong>Spring Book Downloader</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Choose book branch and category wise</p>
+            <img src="{{ url_for('static', filename='img/springer.png') }}" alt="springer" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Springer has released near about 400 books during lockdown period. <br></p>
+            
+            <p>
+                Book collection is grouped Branch wise and Selecting Branch you can access related books.
+            </p>
+
+          
+            <br>
+            
+     <center><a href = '/springer_category_run'>Get your books Here</a></center>
+           <br>
+           <p>If you have any queries please contact me on my any given account.</p>
+
+        </div>
+        
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+   

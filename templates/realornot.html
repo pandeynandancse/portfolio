@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nandan Pandey</title>
+        <link rel = 'icon' href = "img/fav.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+
+        <!-- google font api -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Interests</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Scores</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project : <strong>Real or Not</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Fake Challenge</p>
+            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Two Datasets : train.csv , test.csv <br> Link : <a href = "#">Link to Dataset</a> &nbsp; &nbsp; &nbsp;<a href ="#" >Link to Kaggle Notebook</a></p>
+            <img src="img/portfolio-details.jpg" alt="">
+            <p>Category :<i> Natural Language Procesing </i><br>Steps : <br>a) Data Cleaning using regular expressions<br>
+                b) Add Stop Words if Required and filter them out from text.<br>
+                c) Some steps you can do for better understanding of data such as visualize class balance, explore each columns.<br>
+                d) Create new features by combining two or more given features and normalize each feautre values between some lower range like [0...5] <br>
+                e) Also take care of null or missing values.<br>
+                f) Create and Visualize wordcloud for every category of target class.<br>
+                g) Create vocabulary via Count Vectorizer and fit_transform the training data.<br>
+                h) Create vocabulary via TfidfVectorizer and fit_transform the training data.<strong>(Recommended)</strong><br>
+                i) Create different models on different vectorizer . Also use cross validation if you want  and check.<br>
+                j) Do brute force search to check whether which model gives you better result.
+            </p>
+            <br>
+            <p>If you have any queries please contact me on my any given account.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="#" class="footer__link">Contact Me</a>
+            <ul class="social-list">
+                
+                <!--codepen, dribble-->
+                    
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.quora.com/profile/Nandan-Pandey-8" title = 'quora'>
+                        <i class="fab fa-quora"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/nandan-pandey/" title = 'linkedin'>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com" title = 'twitter'>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/pandeynandancse" title = 'github'>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://kaggle.com" title = 'kaggle'>
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.hackerrank.com/pandeynandancse" title = 'hackerrank'>
+                        <i class="fab fa-hackerrank"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.hackerrank.com/pandeynandancse" title = 'codecademy'>
+                        <i class="fab fa-codecademy"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

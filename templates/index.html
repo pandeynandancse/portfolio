@@ -1,0 +1,152 @@
+
+
+{% extends "layout.html" %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock%}
+
+
+
+
+
+
+{% block body %}        
+        
+
+        
+
+
+        <!-- <a href="/login">login</a>
+        <a href="/signup">signup</a> -->
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Nandan Pandey</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Studying At NIT Kurukshetra</p>
+            <img src="{{ url_for('static', filename='img/nandan.jpg') }}" alt="A picture of Nandan Pandey" class="intro__img">
+        </section>
+        
+
+
+
+
+
+        
+        <!-- My Interests -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">My Interests</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Designing and development of web apps and desktop apps using different technologies such as php, sql, flask(Python) and Java. Currently also studying React as it is currently trending in various industries.Vuejs and Django is are also other important frameworks to learn. Using Heroku for deployment.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Machine Learning</h3>
+                    <p>Machine Learning is one of the trending and exciting fields to work in. Deep Learning is one of it's subsets and various fields are related to it such as Statistics, Visualization, Computer Vision, Natural Language Processing and Image Processing etc. Combining all these fields create field of Artificial Intelligence.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Cyber Security</h3>
+                    <p>I am puruing my Masters in Cyber Security, My area of Interest is Cryptography and Attacks analysis using Machine Learning Techniques. This field will be on top in upcoming year beacuse now a days everything is digitalized and thus security is top most priority and thus demand of security professional will also increase. </p>
+                </div> 
+            </div> 
+            
+            <a href="/contributor" class="btn">Be a Contributor</a>
+        </section>
+        
+
+
+
+
+
+
+
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Pursuing Masters From NIT Kurukshetra</p>
+           
+           <div class="about-me__body">
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+               <p>Myself Nandan Pandey from Pratapgarh , Uttar Pradesh - 230121 . Completed High School from Sewa Shram Inter College ,Dhindhui, Pratapgarh(U.P.) and Intermediate from Raja Harpal Singh Inter College, Singramau Jaunpur(U.P.). Pursued Bachelor Degree from Shri Mata Vaishno Devi University, Katra , Jammu & Kashmir(J&K).</p>
+           </div>
+           
+           <img src="{{ url_for('static', filename='img/ml.jpg') }}" alt="Nandan pandey" class="about-me__img">
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="/corona_notification" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/corona.jpeg') }}" alt="corona_notification" class="portfolio__img">
+                </a>
+                
+
+
+
+
+                <a href="/springer" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/springer.png') }}" alt="springer" class="portfolio__img">
+                </a>
+                
+
+
+
+                <a href="/weather" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/weather.png') }}" alt="weather" class="portfolio__img">
+                </a>
+
+
+
+                <a href="/mlmodel" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/mlmodel.png') }}" alt="mlmodel" class="portfolio__img">
+                </a>
+
+
+
+                 <a href="/image_classification" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/image_classification.png') }}" alt="image_classified" class="portfolio__img">
+                </a>
+
+
+
+                <a href="/yolo_obj_detection" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/yolo_obj_detection.png') }}" alt="yolo_obj_detection" class="portfolio__img">
+                </a>
+
+
+
+
+            </div>
+        </section>
+        
+        
+
+
+
+
+
+
+{% endblock %}
+
+

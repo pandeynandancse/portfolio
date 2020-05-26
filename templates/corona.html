@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock%}
+
+
+
+{% block body %}        
+        
+
+        
+
+
+            
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project : <strong>Coronavirus Notification</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">StateWise Cases</p>
+            <img src="{{ url_for('static', filename='img/corona.jpeg') }}" alt="corona_notification" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Be updated about coronavirus in India <br></p>
+            
+            <p>
+                Open Project and terminal. It will ask you to say State Name and it will announce about number of cases of that state.
+            </p>
+
+            <p>
+                To know overall cases of India Say: 'total cases'
+            </p>
+
+            <p>
+                To stop program say : 'stop'
+            </p>
+
+            <br>
+            
+           <center> <button type="button" class="btn btn-primary"><a href = '/corona_notification_run'>Know Here</a></button></center>
+           <br>
+           <p>If you have any queries please contact me on my any given account.</p>
+
+        </div>
+        
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+   
